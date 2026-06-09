@@ -1,0 +1,8 @@
+analysis_block,question,suggested_fields
+Data quality,How many missing values and duplicate keys are there in each table?,"customer_id, order_id, product_id, city, birth_year"
+Average check,What is the average order value for completed orders by month?,"order_status, order_date, order_total"
+Top customers,Which customers generated the highest revenue and how often did they buy?,"customer_id, order_total, order_date"
+Cohorts,How does retention change by first purchase month?,"customer_id, order_date, order_status"
+RFM,"Which customers are Champions, Loyal, At Risk, or Lost?","customer_id, order_date, order_total"
+Seasonality,"Which months, weekdays, and promo campaigns drive the most revenue?","order_date, promo_code, order_total, net_revenue_for_analysis"
+Products,Which categories and products generate the most revenue and margin?,"product_id, category, net_amount, cost_amount"

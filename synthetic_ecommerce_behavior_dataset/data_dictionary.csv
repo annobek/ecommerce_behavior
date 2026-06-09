@@ -1,0 +1,42 @@
+table,field,description,example
+customers,customer_id,Unique synthetic customer identifier,C000001
+customers,signup_date,Date when the customer registered,2023-05-17
+customers,country,Synthetic customer country,Germany
+customers,city,Synthetic city; intentionally has a small share of missing values,Berlin
+customers,birth_year,Birth year; intentionally has a small share of missing values,1992
+customers,gender,Synthetic self-reported gender category,female
+customers,acquisition_channel,Marketing channel that acquired the customer,paid_search
+customers,newsletter_opt_in,Whether the customer agreed to receive newsletters,TRUE
+customers,loyalty_tier,Simplified customer loyalty segment,Silver
+products,product_id,Unique synthetic product identifier,P0001
+products,category,Product category,Electronics
+products,subcategory,Product subcategory,Audio
+products,brand,Synthetic brand name,Lumora
+products,product_name,Synthetic product name,Lumora Audio Item 1
+products,list_price,Reference product price before order-level variation,49.99
+products,unit_cost,Estimated internal cost used for margin analysis,24.50
+orders,order_id,Unique synthetic order identifier,O0000001
+orders,customer_id,Customer who placed the order,C000001
+orders,order_date,Date when the order was placed,2025-11-28
+orders,order_status,"completed, returned, or cancelled",completed
+orders,payment_method,Payment method used for the order,card
+orders,promo_code,Promotion code; NO_PROMO means no promo,BLACKFRIDAY
+orders,device_type,Device/channel used to place the order,mobile_web
+orders,shipping_fee,Shipping revenue charged to the customer,4.99
+orders,gross_amount,Sum of item amounts before discounts,120.00
+orders,discount_amount,Sum of discounts across items,12.00
+orders,net_items_amount,"Item revenue after discounts, excluding shipping",108.00
+orders,total_quantity,Total number of units in the order,3
+orders,order_total,Net items amount plus shipping fee,112.99
+orders,net_revenue_for_analysis,"Recommended revenue field: completed positive, returned negative, cancelled zero",112.99
+order_items,order_item_id,Unique synthetic line-item identifier,I00000001
+order_items,order_id,Order containing this item,O0000001
+order_items,product_id,Product purchased,P0001
+order_items,category,Denormalized product category for easier analysis,Fashion
+order_items,quantity,Number of units purchased,2
+order_items,unit_price,Actual unit price in this order line,39.99
+order_items,discount_pct,Discount percent applied to this line,0.1
+order_items,discount_amount,Line-level discount amount,8.00
+order_items,gross_amount,Line-level revenue before discount,79.98
+order_items,net_amount,Line-level revenue after discount,71.98
+order_items,cost_amount,Line-level estimated cost,36.00
